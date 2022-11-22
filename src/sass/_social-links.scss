@@ -1,0 +1,25 @@
+.net-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__link {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        fill: var(--svg-grey-color);
+    
+        transition: fill 250ms var(--timing-function);
+        transition: background-color 250ms var(--timing-function);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--accent-color);
+        fill: var(--primary-white-color);
+    }
+}
+
