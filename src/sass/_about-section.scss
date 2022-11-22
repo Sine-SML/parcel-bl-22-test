@@ -1,0 +1,44 @@
+.about-section {
+    display: none;
+    
+    
+@media screen and (min-width: $desktop) {
+        display: block;
+        padding-bottom: 94px;
+    }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+    
+            position: relative;
+        }
+    
+        &__image {
+            display: block;
+        }
+    
+        &__text {
+            position: absolute;
+            bottom: 0;
+    
+            color: var(--primary-white-color);
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            background: $about-section;
+            display: flex;
+            height: 70px;
+            width: 370px;
+            align-items: center;
+            justify-content: center;
+        }
+}
+

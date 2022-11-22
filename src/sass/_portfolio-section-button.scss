@@ -1,0 +1,46 @@
+.portfolio-section {
+    padding: 60px 0;
+
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+    }
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 50px;
+        }
+
+    &__button {
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.62;
+            text-align: center;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            padding: 6px 22px;
+    
+            transition: color $transition-dur var(--timing-function),
+                background-color $transition-dur var(--timing-function),
+                box-shadow $transition-dur var(--timing-function);
+        }
+    
+    &__button:hover,
+    &__button:focus {
+            color: var(--primary-white-color);
+            background-color: var(--accent-color);
+    
+            box-shadow: $filter-list-button-box-shadow;
+            border-radius: 4px;
+        }
+}
+
